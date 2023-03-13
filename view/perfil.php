@@ -18,7 +18,7 @@
             <h1>Perfil</h1>
             <figure>
                 <?php
-                    if (@$_SESSION['foto_perfil'] == "") {
+                    if (@$_SESSION['foto_perfil'] == "../static/perfil-padrao.png") {
                         echo "<img id='foto_perfil' class='w3-image' src='../static/perfil-padrao.png' alt='foto de perfil'>";
                     } else {
                         echo "<img id='foto_perfil' class='w3-image' src='".$_SESSION['foto_perfil']."' alt='foto de perfil'>";

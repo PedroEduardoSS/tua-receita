@@ -14,10 +14,11 @@ switch (@$_REQUEST["action"]) {
         if ($quantidade == 1) {
             print "<script>alert('Email já cadastrado!');</script>";
         } else {
-            $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
+            $foto_perfil = "../static/perfil-padrao.png";
+            $sql = "INSERT INTO usuarios (nome, email, senha, foto_perfil) VALUES (?, ?, ?, ?)";
 
             $stmt = $conn->prepare($sql);
-            $stmt->bind_param('sss', $nome, $email, $senha);
+            $stmt->bind_param('ssss', $nome, $email, $senha, $foto_perfil);
             $res = $stmt->execute();
 
             if($res==true){
