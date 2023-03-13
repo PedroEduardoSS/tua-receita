@@ -1,12 +1,12 @@
 <?php
-include_once("../control/signup_controller.php");
+include_once("control/signup_controller.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <?php
     $page_title = "Signup";
-    include('../include/head.php');
+    include('include/head.php');
 ?>
 
 <body>
@@ -34,7 +34,7 @@ include_once("../control/signup_controller.php");
         </form>
     </div>
     <?php
-        include('../include/footer.php');
+        include('include/footer.php');
     ?>
 </body>
 

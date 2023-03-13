@@ -57,6 +57,6 @@ function test_pwd($pwd) {
 }
 
 if ($countErr == 0){
-    include('../model/save.php');
+    include('model/save.php');
 }
 ?>

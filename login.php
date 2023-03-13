@@ -1,12 +1,12 @@
 <?php
-include_once("../control/login_controller.php");
+include_once("control/login_controller.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <?php
     $page_title = "Login";
-    include('../include/head.php');
+    include('include/head.php');
 ?>
 
 <body>
@@ -27,7 +27,7 @@ include_once("../control/login_controller.php");
         <a href="esqueci_senha.php">Esqueci a senha</a>
     </div>
     <?php
-        include('../include/footer.php');
+        include('include/footer.php');
     ?>
 </body>
 

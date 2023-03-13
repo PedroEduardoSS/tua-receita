@@ -5,8 +5,8 @@
     include('include/head.php');
 ?>
 <body>
-    <a href="view/login.php">Entrar</a>
+    <a href="login.php">Entrar</a>
 
-    <a href="view/signup.php">Inscreva-se</a>
+    <a href="signup.php">Inscreva-se</a>
 </body>
 </html>

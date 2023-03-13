@@ -2,7 +2,7 @@
     <a class="w3-bar-item w3-hover-grey w3-button" href="../view/home.php">Tua Receita</a>
     <a class="w3-bar-item w3-hover-grey w3-button" href="../view/receitas.php">RECEITAS</a>
     <div class="w3-dropdown-hover w3-right w3-hide-small">
-        <button class="w3-button"><?php echo $_SESSION['nome']; ?></button>
+        <button class="w3-button"><?php echo $_SESSION['foto_perfil']; ?></button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
             <a href="../view/perfil.php" class="w3-bar-item w3-button">Perfil</a>
             <a href="../view/logout.php" class="w3-bar-item w3-button">Sair</a>

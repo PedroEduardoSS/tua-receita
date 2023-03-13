@@ -54,7 +54,7 @@ switch (@$_REQUEST["action"]) {
                     $_SESSION['email'] = $usuario['email'];
                     $_SESSION['foto_perfil'] = $usuario['foto_perfil'];
                     
-                    header("Location: home.php");
+                    header("Location: view/home.php");
         
                 } else {
                     echo "<div class='w3-panel w3-red'>
