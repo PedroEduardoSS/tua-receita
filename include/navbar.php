@@ -1,6 +1,7 @@
 <nav class="w3-bar w3-black">
     <a class="w3-bar-item w3-hover-grey w3-button w3-large w3-padding-16" href="../view/home.php">Tua Receita</a>
     <a class="w3-bar-item w3-hover-grey w3-button w3-large w3-padding-16" href="../view/receitas.php">RECEITAS</a>
+    <a class="w3-bar-item w3-hover-grey w3-button w3-large w3-padding-16" href="../view/tuas_receitas.php">TUAS RECEITAS</a>
     <div class="w3-dropdown-hover w3-right w3-hide-small">
         <button class="w3-button"><?php echo "<img id='foto_perfil' class='w3-image w3-round-xxlarge' src='".$_SESSION['foto_perfil']."' alt='foto de perfil' style='width:45px; height:45px'>"; ?></button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
