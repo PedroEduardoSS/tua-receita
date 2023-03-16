@@ -1,6 +1,6 @@
 <?php
-include('model/protect.php');
-include('model/save.php');
+include('../model/protect.php');
+include('../model/save.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ include_once('../include/head.php');
             <h1>Encerramento de conta</h1>
             <p>Essa ação irá encerrar sua conta permanentemente.</p>
             <h6>Tem certeza? (volte à pagina anterior se não tiver certeza)</h6>
-            <input type="submit" class="w3-button w3-red w3-round-large" name="submit" value="Excluir Permanentemente">
+            <input type="submit" class="w3-button w3-red w3-round-large" value="Excluir Permanentemente">
         </form>
     </div>
 </body>

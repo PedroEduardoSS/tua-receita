@@ -24,7 +24,7 @@ include_once("control/signup_controller.php");
         <span class="error"><?php echo $emailErr;?></span>
         <br>
         <label for="pwd">Senha:</label>
-        <input type="password" class="w3-input" id="pwd" placeholder="Senha de 8 caracteres ou mais" name="senha" require>
+        <input type="password" class="w3-input" id="pwd" placeholder="Senha de 8 até 12 caracteres" name="senha" require>
         <span class="error"><?php echo $senhaErr;?></span>
         
         <input class="w3-check w3-section" type="checkbox" name="remember" required> Eu li e aceito os

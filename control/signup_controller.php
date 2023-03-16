@@ -38,6 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (strlen($_POST["senha"]) < 8) {
             $senhaErr = "Senha deve ser no mínimo 8 caracteres!";
             $countErr = 1;
+        } elseif (strlen($_POST["senha"]) > 12) {
+            $senhaErr = "Senha deve ser no máximo 12 caracteres!";
+            $countErr = 1;
         }
     }
 }

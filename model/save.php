@@ -138,9 +138,9 @@ switch (@$_REQUEST["action"]) {
         $res = $stmt->execute();
 
         if($res==true){
-            header("Location: index.php");
+            header("Location: ../index.php");
         } else {
-            print "<script>alert('Falha em cadastrar!');</script>";
+            print "<script>alert('Falha em excluir!');</script>";
         }
         break;
 
@@ -178,6 +178,19 @@ switch (@$_REQUEST["action"]) {
             echo "<div class='w3-panel w3-red'>
             <h3>Falha!</h3> <p>Esse email não está cadastrado.</p>
             </div>";
+        }
+        break;
+
+    case 'criar_receita':
+        $sql = "INSERT INTO receitas (receita_titulo, ingredientes, preparo, usuario_id) VALUES (?, ?, ?, ?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('sssi', $receita_titulo, $ingredientes , $preparo, $_SESSION["id"]);
+        $res = $stmt->execute();
+        
+        if($res==true){
+            header("Location: ../view/home.php");
+        } else {
+            print "<script>alert('Falha em excluir!');</script>";
         }
         break;
     
