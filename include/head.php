@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
     <link rel="stylesheet" href="../static/style.css">
+    <!-- Same file, but available for index.php, login.php and signup.php files-->
+    <link rel="stylesheet" href="static/style.css">
     <script src="../static/main.js"></script>
 
     <title>

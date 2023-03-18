@@ -15,6 +15,10 @@
     ?>
     <h1>Receitas</h1>
     <?php
+        include('../control/receita_controller.php');
+        read();
+    ?>
+    <?php
         include('../include/footer.php');
     ?>
 </body>

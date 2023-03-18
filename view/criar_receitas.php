@@ -1,5 +1,6 @@
 <?php
     include('../control/receita_controller.php');
+    create();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,20 +20,23 @@
         
         <label>Titulo</label>
         <input class="w3-input" type="text" name="receita_titulo" placeholder="Ex: Torta de maçã" required>
-        <span class="error"><?php echo $receita_tituloErr;?></span>
         <br>
 
         <label>Ingredientes</label>
-        <input class="w3-input" type="text" name="ingredientes" placeholder="Ex: * 4 maçãs;">
-        <span class="error"><?php echo $ingredientesErr;?></span>
+        <textarea class="w3-input" type="text" rows="20" name="ingredientes" required>
+        Ex: * 4 maçãs;
+            * açúcar;
+        </textarea>
         <br>
 
         <label>Modo de preparo</label>
-        <input class="w3-input" type="text" name="preparo" placeholder="Ex: Corte as maçãs...">
-        <span class="error"><?php echo $preparoErr;?></span>
+        <textarea class="w3-input" type="text" rows="30" name="preparo" required>
+        Ex: Corte as maçãs...
+        </textarea>
         <br>
 
         <input type="submit" class="w3-button w3-green w3-round-large" value="Criar Receita">
+        <br>
     </form>
     <?php
         include('../include/footer.php');

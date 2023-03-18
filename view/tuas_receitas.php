@@ -15,6 +15,10 @@
     ?>
     <h1>Tuas Receitas</h1>
     <?php
+        include('../control/receita_controller.php');
+        readById($_SESSION["id"]);
+    ?>
+    <?php
         include('../include/footer.php');
     ?>
 </body>

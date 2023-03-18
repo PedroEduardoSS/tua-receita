@@ -166,7 +166,7 @@ switch (@$_REQUEST["action"]) {
             $res = $stmt->execute();
 
             if ($res==true) {
-                $msg = "Sua nova senha provisória:/n" . $senha . "/nAo entrar, altera a senha.";
+                $msg = "Sua nova senha provisória:/n" . $senha . "/nAo entrar, altere a senha.";
                 $msg = wordwrap($msg,70);
                 mail($email,"Nova senha", $msg);
             }
@@ -190,12 +190,12 @@ switch (@$_REQUEST["action"]) {
         if($res==true){
             header("Location: ../view/home.php");
         } else {
-            print "<script>alert('Falha em excluir!');</script>";
+            print "<script>alert('Falha em criar receita!');</script>";
         }
         break;
     
     default:
-        # code...
+        #code
         break;
 }
 ?>
